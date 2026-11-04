@@ -17,70 +17,6 @@ class SdgInfoScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Student & Experiment Header Card
-            Container(
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: AppTheme.sdgRed.withOpacity(0.3), width: 1.5),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.04),
-                    blurRadius: 10,
-                  ),
-                ],
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.all(8),
-                        decoration: BoxDecoration(
-                          color: AppTheme.sdgRedLight,
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: const Icon(Icons.assignment_ind_rounded, color: AppTheme.sdgRed, size: 24),
-                      ),
-                      const SizedBox(width: 12),
-                      const Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'STUDENT PROJECT DETAILS',
-                              style: TextStyle(
-                                fontSize: 11,
-                                fontWeight: FontWeight.bold,
-                                color: AppTheme.sdgRed,
-                                letterSpacing: 0.8,
-                              ),
-                            ),
-                            Text(
-                              'Rayavarapu Harshith',
-                              style: TextStyle(
-                                fontSize: 17,
-                                fontWeight: FontWeight.w800,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  const Divider(height: 24),
-                  _buildDetailRow('Roll Number', '24PA1A05J5 (S.No 7)'),
-                  _buildDetailRow('Experiment No.', '2b (Flutter Layouts)'),
-                  _buildDetailRow('Concept Evaluated', 'Stack and Positioned Widgets'),
-                  _buildDetailRow('Problem Statement',
-                      'Build a Course Catalog screen where thumbnails carry "New/Free" badges using Stack and Positioned.'),
-                ],
-              ),
-            ),
-            const SizedBox(height: 20),
-
             // SDG 4 Header Banner
             Container(
               padding: const EdgeInsets.all(16),
@@ -97,7 +33,7 @@ class SdgInfoScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'UN SUSTAINABLE DEVELOPMENT GOAL 4',
+                          'SUSTAINABLE DEVELOPMENT GOAL 4',
                           style: TextStyle(
                             color: Colors.white70,
                             fontSize: 10,
@@ -106,7 +42,7 @@ class SdgInfoScreen extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'Quality Education',
+                          'Quality Education for All',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 20,
@@ -147,7 +83,7 @@ class SdgInfoScreen extends StatelessWidget {
 
             // Core Technical Highlights: Stack & Positioned
             const Text(
-              'Experiment 2b: Stack & Positioned Architecture',
+              'Layout & Badge Architecture',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 10),

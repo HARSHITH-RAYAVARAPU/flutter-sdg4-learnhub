@@ -8,11 +8,6 @@ void main() {
 }
 
 /// Root widget for the LearnHub Application.
-/// Developed for:
-/// - Student: Rayavarapu Harshith (Roll No: 24PA1A05J5)
-/// - Experiment: 2b (Stack & Positioned Widgets)
-/// - SDG: 4 (Quality Education)
-/// - Problem Statement: "Build a Course Catalog screen where thumbnails carry 'New/Free' badges using Stack and Positioned."
 class LearnHubApp extends StatelessWidget {
   const LearnHubApp({super.key});
 

@@ -3,7 +3,6 @@ import '../models/course.dart';
 import '../theme/app_theme.dart';
 import '../widgets/category_filter_bar.dart';
 import '../widgets/course_card.dart';
-import '../widgets/sdg_banner.dart';
 import 'sdg_info_screen.dart';
 
 /// Main screen satisfying Experiment 2b problem statement:
