@@ -1,0 +1,11 @@
+{
+  "name": "LearnHub",
+  "short_name": "LearnHub",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#C5192D",
+  "theme_color": "#C5192D",
+  "description": "SDG 4 Quality Education Course Catalog",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false
+}
