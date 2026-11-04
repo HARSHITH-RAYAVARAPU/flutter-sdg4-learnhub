@@ -55,25 +55,6 @@ class CourseCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // SDG 4 Target Tag
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                    decoration: BoxDecoration(
-                      color: AppTheme.sdgRedLight,
-                      borderRadius: BorderRadius.circular(6),
-                    ),
-                    child: Text(
-                      'SDG 4: Quality Education',
-                      style: const TextStyle(
-                        color: AppTheme.sdgRed,
-                        fontSize: 10.5,
-                        fontWeight: FontWeight.bold,
-                        letterSpacing: 0.3,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 8),
-
                   // Course Title
                   Text(
                     course.title,

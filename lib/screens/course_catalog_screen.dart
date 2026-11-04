@@ -3,7 +3,6 @@ import '../models/course.dart';
 import '../theme/app_theme.dart';
 import '../widgets/category_filter_bar.dart';
 import '../widgets/course_card.dart';
-import 'sdg_info_screen.dart';
 
 /// Main screen satisfying Experiment 2b problem statement:
 /// "Build a Course Catalog screen where thumbnails carry 'New/Free' badges using Stack and Positioned."
@@ -83,26 +82,13 @@ class _CourseCatalogScreenState extends State<CourseCatalogScreen> {
               child: const Icon(Icons.school, color: Colors.white, size: 20),
             ),
             const SizedBox(width: 10),
-            const Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'LearnHub',
-                  style: TextStyle(
-                    fontSize: 19,
-                    fontWeight: FontWeight.w900,
-                    letterSpacing: -0.5,
-                  ),
-                ),
-                Text(
-                  'SDG 4: Quality Education Catalog',
-                  style: TextStyle(
-                    fontSize: 10.5,
-                    color: AppTheme.textSecondary,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ],
+            const Text(
+              'LearnHub',
+              style: TextStyle(
+                fontSize: 19,
+                fontWeight: FontWeight.w900,
+                letterSpacing: -0.5,
+              ),
             ),
           ],
         ),
@@ -114,16 +100,6 @@ class _CourseCatalogScreenState extends State<CourseCatalogScreen> {
               setState(() {
                 _isGridView = !_isGridView;
               });
-            },
-          ),
-          IconButton(
-            tooltip: 'SDG 4 Project Details',
-            icon: const Icon(Icons.info_outline_rounded),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const SdgInfoScreen()),
-              );
             },
           ),
           const SizedBox(width: 4),

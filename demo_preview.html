@@ -368,14 +368,8 @@
         <div class="brand-icon">
           <span class="material-symbols-rounded">school</span>
         </div>
-        <div>
-          <div class="brand-title">LearnHub</div>
-          <div class="brand-subtitle">SDG 4: Quality Education</div>
-        </div>
+        <div class="brand-title">LearnHub</div>
       </div>
-      <button onclick="openInfoModal()" style="background:none; border:none; cursor:pointer;">
-        <span class="material-symbols-rounded" style="color:var(--text); font-size:24px;">info</span>
-      </button>
     </div>
 
     <!-- Scrollable Content -->
@@ -636,7 +630,6 @@
           </div>
 
           <div class="card-body">
-            <span class="sdg-tag">SDG 4: Quality Education</span>
             <div class="course-title">${c.title}</div>
             <div class="course-instructor">
               <span class="material-symbols-rounded" style="font-size:16px;">account_circle</span>
@@ -670,14 +663,6 @@
 
     function closeModal() {
       document.getElementById('courseModal').style.display = 'none';
-    }
-
-    function openInfoModal() {
-      document.getElementById('infoModal').style.display = 'flex';
-    }
-
-    function closeInfoModal() {
-      document.getElementById('infoModal').style.display = 'none';
     }
 
     // Init
