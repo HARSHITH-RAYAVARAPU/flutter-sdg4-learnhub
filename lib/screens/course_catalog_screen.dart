@@ -175,12 +175,7 @@ class _CourseCatalogScreenState extends State<CourseCatalogScreen> {
             ),
           ),
 
-          // 2. SDG 4 Quality Education Banner
-          const SliverToBoxAdapter(
-            child: SdgBanner(),
-          ),
-
-          // 3. Categories & Quick Filter Chips
+          // 2. Categories & Quick Filter Chips
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.only(top: 8, bottom: 4),
