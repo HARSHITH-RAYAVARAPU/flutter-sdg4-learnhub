@@ -80,7 +80,7 @@ class Course {
           isNew: true,
           isFree: false,
           price: 499.0,
-          imageUrl: 'https://images.unsplash.com/photo-1677442136019-21780efad99a?w=600',
+          imageUrl: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80',
           gradientColors: [Color(0xFF4A148C), Color(0xFF7B1FA2)],
           description:
               'Explore how artificial intelligence can tackle urgent global problems such as climate monitoring, automated agriculture, and healthcare accessibility.',
@@ -104,7 +104,7 @@ class Course {
           level: 'Intermediate',
           isNew: false,
           isFree: true,
-          imageUrl: 'https://images.unsplash.com/photo-1509391365360-2e959784a276?w=600',
+          imageUrl: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80',
           gradientColors: [Color(0xFF004D40), Color(0xFF00897B)],
           description:
               'Understand photovoltaic cell physics, wind turbine mechanics, and smart power grid storage techniques to drive clean energy transitions.',

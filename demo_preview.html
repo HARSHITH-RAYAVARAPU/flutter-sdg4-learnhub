@@ -424,12 +424,6 @@
 <body>
 
   <div class="mobile-frame">
-    <!-- Student Header -->
-    <div class="student-badge-bar">
-      <span>👨‍🎓 Rayavarapu Harshith (24PA1A05J5)</span>
-      <span>Exp 2b: Stack & Positioned</span>
-    </div>
-
     <!-- App Bar -->
     <div class="app-bar">
       <div class="brand">
@@ -468,11 +462,6 @@
           <span class="pill">✓ Global Mentors</span>
           <span class="pill">✓ Equal Opportunity</span>
         </div>
-      </div>
-
-      <!-- Technical Concept Box -->
-      <div class="concept-card">
-        <strong>Experiment 2b Core Concept:</strong> Thumbnails below use Flutter's <code>Stack</code> container with <code>Positioned</code> widgets pinning the <strong>NEW</strong> (Top-Left) and <strong>FREE</strong> (Top-Right) badges.
       </div>
 
       <!-- Categories -->
@@ -530,11 +519,9 @@
         </button>
       </div>
       <div style="font-size:13px; line-height:1.5; color:#333;">
-        <p><strong>Student:</strong> Rayavarapu Harshith (Roll No: 24PA1A05J5)</p>
-        <p><strong>Experiment:</strong> 2b (Stack and Positioned Badges)</p>
-        <p><strong>Goal:</strong> SDG 4 Quality Education</p>
+        <p><strong>Goal:</strong> UN SDG 4 • Quality Education for All</p>
         <br>
-        <p><strong>2-Line SDG 4 Justification:</strong></p>
+        <p><strong>SDG 4 Alignment & Mission:</strong></p>
         <p style="background:var(--sdg-red-light); padding:10px; border-radius:8px; color:var(--sdg-red); font-size:12.5px;">
           LearnHub advances SDG 4 (Quality Education) by offering an accessible, open-curriculum course catalog that visually highlights "FREE" and "NEW" educational opportunities using Stack and Positioned overlays, empowering learners with transparent, barrier-free skill acquisition.
         </p>
@@ -572,7 +559,8 @@
         isNew: true,
         isFree: false,
         price: 499,
-        img: 'https://images.unsplash.com/photo-1677442136019-21780efad99a?w=600',
+        img: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80',
+        fallbackImg: 'https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=800&q=80',
         desc: 'Explore how AI solves environmental and humanitarian crises, from crop health detection to clean energy distribution.'
       },
       {
@@ -587,7 +575,8 @@
         isNew: false,
         isFree: true,
         price: 0,
-        img: 'https://images.unsplash.com/photo-1509391365360-2e959784a276?w=600',
+        img: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80',
+        fallbackImg: 'https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80',
         desc: 'Learn photovoltaic cell engineering, solar panel installation physics, and decentralized battery energy storage.'
       },
       {
@@ -695,7 +684,8 @@
       container.innerHTML = filtered.map(c => `
         <div class="course-card" onclick="openCourseModal('${c.id}')">
           <!-- FLUTTER STACK & POSITIONED SIMULATION -->
-          <div class="course-thumbnail-stack" style="background-image: url('${c.img}')">
+          <div class="course-thumbnail-stack">
+            <img src="${c.img}" alt="${c.title}" style="position: absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;" onerror="if(this.src!=='${c.fallbackImg || ''}' && '${c.fallbackImg || ''}') this.src='${c.fallbackImg}'; else this.style.display='none';" />
             <div class="thumbnail-gradient"></div>
             
             ${c.isNew ? `

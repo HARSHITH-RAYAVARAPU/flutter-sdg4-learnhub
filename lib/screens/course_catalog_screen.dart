@@ -180,48 +180,7 @@ class _CourseCatalogScreenState extends State<CourseCatalogScreen> {
             child: SdgBanner(),
           ),
 
-          // 3. Educational Concept Note: Stack & Positioned in Action
-          SliverToBoxAdapter(
-            child: Container(
-              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-              decoration: BoxDecoration(
-                color: const Color(0xFFF0F4F8),
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: const Color(0xFFD0DCE5)),
-              ),
-              child: const Row(
-                children: [
-                  Icon(Icons.layers_rounded, color: Color(0xFF1976D2), size: 22),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Experiment 2b Concept: Stack & Positioned',
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.bold,
-                            color: Color(0xFF0D47A1),
-                          ),
-                        ),
-                        Text(
-                          'Thumbnails use Stack widget with Positioned overlays for "NEW", "FREE", and duration badges.',
-                          style: TextStyle(
-                            fontSize: 11,
-                            color: Color(0xFF37474F),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-
-          // 4. Categories & Quick Filter Chips
+          // 3. Categories & Quick Filter Chips
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.only(top: 8, bottom: 4),
